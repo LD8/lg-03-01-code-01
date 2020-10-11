@@ -1,5 +1,8 @@
 # Lagou Edu Assignment Part 3 Module 1 VueRouter Code
 
+**手写 VueRouter hash 模式代码**
+请访问`/src/vuerouter`文件夹
+
 ## Project setup
 
 ```
