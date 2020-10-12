@@ -13,7 +13,6 @@ export default class VueRouter {
       beforeCreate() {
         if (this.$options.router) {
           _Vue.prototype.$router = this.$options.router;
-
           this.$options.router.init();
         }
       }
@@ -46,9 +45,8 @@ export default class VueRouter {
         to: String
       },
       methods: {
-        clickHander(e) {
+        clickHandler(e) {
           history.pushState({}, "", this.to);
-
           this.$router.data.current = this.to;
 
           e.preventDefault();
@@ -62,7 +60,7 @@ export default class VueRouter {
               href: this.to
             },
             on: {
-              click: this.clickHander
+              click: this.clickHandler
             }
           },
           [this.$slots.default]

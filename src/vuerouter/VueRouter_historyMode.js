@@ -83,7 +83,7 @@ export default class VueRouter {
       },
       // 注册点击事件
       methods: {
-        clickHander(e) {
+        clickHandler(e) {
           // 1. 修改地址栏路由
           // 传参：pushState(data: any, title: string, url?: string): void
           history.pushState({}, "", this.to);
@@ -104,7 +104,7 @@ export default class VueRouter {
               href: this.to
             },
             on: {
-              click: this.clickHander
+              click: this.clickHandler
             }
           },
           [this.$slots.default]
